@@ -1,0 +1,10 @@
+Prisma Setup
+     1.npm install Prisma --save-dev
+     2.npm install @prisma/client
+     3.npx prisma init 
+         here the schema and env file was created
+
+notes 
+  the prisma and prismaClient both has a same version to be installed 
+if is musmatch the 
+    *  npx run generate not execute
