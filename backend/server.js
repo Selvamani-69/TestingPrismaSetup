@@ -1,5 +1,14 @@
 // ./server.js
-const prisma = require("./prisma/getPrisma");
+
+import { PrismaClient } from '@prisma/client';
+import dotenv from 'dotenv';
+
+dotenv.config()
+
+
+console.log(process.env.PORT)
+
+const prisma = new PrismaClient();
 
 async function main() {
   const user = await prisma.user.create({
